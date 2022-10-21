@@ -1,9 +1,11 @@
-export const THEME = {
+export const THEMES = {
   COLORS: {
     BLACK_900: "#121214",
     BLACK_800: "#18181B",
 
     WHITE: "#FFFF",
+
+    BACKGROUND: "#fafafa",
 
     GREEN: "#34D399",
     RED: "#F87171",
@@ -19,8 +21,11 @@ export const THEME = {
     BLACK: "Inter_900Black",
   },
   FONT_SIZE: {
-    SM: 14,
-    MD: 16,
-    LG: 24,
+    SM: "14px",
+    MD: "16px",
+    XL: "24px",
+    "2XL": "28px",
+    "3XL": "32px",
+    "4XL": "36px",
   },
 };

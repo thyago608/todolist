@@ -1,14 +1,17 @@
+import { THEMES } from "@theme";
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-  flex: 1;
-  align-items: center;
-  justify-content: center;
+  min-height: 100%;
 
-  background: #121214;
+  padding: 32px 32px 0;
 `;
 
-export const Title = styled.Text`
-  color: #d3d3d3;
-  font-size: 36px;
+export const Heading = styled.Text`
+  font-family: ${THEMES.FONT_FAMILY.BOLD};
+  font-size: ${THEMES.FONT_SIZE["4XL"]};
+`;
+
+export const TaskList = styled.ScrollView`
+  margin-top: 32px;
 `;

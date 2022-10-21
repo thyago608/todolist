@@ -4,7 +4,7 @@ import { Container } from "./styles";
 export function Loading() {
   return (
     <Container>
-      <ActivityIndicator color="#FFFF" />
+      <ActivityIndicator color="#111" size={30} />
     </Container>
   );
 }
