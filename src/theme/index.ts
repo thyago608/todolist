@@ -7,6 +7,8 @@ export const THEMES = {
 
     BACKGROUND: "#fafafa",
 
+    SLATE_50: "#f8fafc",
+
     GREEN: "#34D399",
     RED_400: "#f87171",
     RED_500: "#ef4444",
