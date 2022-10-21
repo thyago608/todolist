@@ -18,6 +18,8 @@ export const THEMES = {
     ZINC_300: "#D4D4D8",
     CYAN_500: "#06b6d4",
     CYAN_600: "#0d9488",
+
+    BLUE_500: "#3b82f6",
   },
   FONT_FAMILY: {
     REGULAR: "Inter_400Regular",
