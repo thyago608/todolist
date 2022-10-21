@@ -1,20 +1,20 @@
+import { FlatList } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Task } from "@components/Task";
-import { Container, Heading, TaskList } from "./styles";
+import { tasks } from "@mocks";
+import { Container, Heading } from "./styles";
 
 export function Home() {
   return (
     <SafeAreaView>
       <Container>
-        <Heading>Today</Heading>
-        <TaskList>
-          <Task />
-          <Task />
-          <Task />
-          <Task />
-          <Task />
-          <Task />
-        </TaskList>
+        <FlatList
+          ListHeaderComponent={<Heading>Today</Heading>}
+          data={tasks}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => <Task data={item} />}
+          showsVerticalScrollIndicator={false}
+        />
       </Container>
     </SafeAreaView>
   );

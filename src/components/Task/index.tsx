@@ -1,9 +1,14 @@
-import { TouchableWithoutFeedback } from "react-native";
-import { Content, Title, Category, Priority, Info } from "./styles";
-import CheckBox from "expo-checkbox";
 import { useState } from "react";
+import { TouchableWithoutFeedback } from "react-native";
+import CheckBox from "expo-checkbox";
+import { ITask } from "../../interfaces/Task";
+import { Content, Title, Category, Priority, Info } from "./styles";
 
-export function Task() {
+interface TaskProps {
+  data: ITask;
+}
+
+export function Task({ data }: TaskProps) {
   const [isChecked, setIsChecked] = useState(false);
 
   function toggleCheckboxValue() {
@@ -19,9 +24,9 @@ export function Task() {
           style={{ borderWidth: 1, borderRadius: 6, width: 18, height: 18 }}
         />
         <Info>
-          <Title>Pay for utility services</Title>
-          <Category>Home</Category>
-          <Priority level="low">Low</Priority>
+          <Title>{data.title}</Title>
+          <Category>{data.category}</Category>
+          <Priority level={data.level}>{data.level}</Priority>
         </Info>
       </Content>
     </TouchableWithoutFeedback>

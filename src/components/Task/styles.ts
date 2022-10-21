@@ -53,6 +53,7 @@ export const Priority = styled.Text<PriorityColors>`
   margin-top: 10px;
   font-size: ${THEMES.FONT_SIZE.XS};
   font-family: ${THEMES.FONT_FAMILY.MEDIUM};
+  text-transform: capitalize;
 
   background: ${({ level }) => priorityColors[level].bg};
   color: ${({ level }) => priorityColors[level].text};
