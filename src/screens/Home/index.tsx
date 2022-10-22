@@ -4,8 +4,20 @@ import { Task } from "@components/Task";
 import { ButtonNewTask } from "@components/ButtonNewTask";
 import { tasks } from "@mocks";
 import { Container, Heading } from "./styles";
+import { ModalTask } from "@components/ModalTask";
+import { useState } from "react";
 
 export function Home() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  function handleOpenModal() {
+    setModalOpen(true);
+  }
+
+  function handleCloseModal() {
+    setModalOpen(false);
+  }
+
   return (
     <SafeAreaView>
       <Container>
@@ -17,7 +29,8 @@ export function Home() {
           showsVerticalScrollIndicator={false}
         />
       </Container>
-      <ButtonNewTask />
+      <ButtonNewTask onPress={handleOpenModal} />
+      <ModalTask visible={modalOpen} onRequestClose={handleCloseModal} />
     </SafeAreaView>
   );
 }

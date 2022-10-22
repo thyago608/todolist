@@ -13,6 +13,7 @@ module.exports = function (api) {
             "@interfaces": "./src/interfaces",
             "@theme": "./src/theme/index.ts",
             "@mocks": "./src/mocks/index.ts",
+            "@context": "./src/context",
           },
         },
       ],

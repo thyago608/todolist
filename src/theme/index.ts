@@ -15,6 +15,8 @@ export const THEMES = {
 
     ZINC_500: "#71717A",
     ZINC_400: "#A1A1AA",
+    STONE_500: "#737373",
+
     ZINC_300: "#D4D4D8",
     CYAN_500: "#06b6d4",
     CYAN_600: "#0d9488",

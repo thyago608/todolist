@@ -8,6 +8,7 @@
       "@screens/*": ["./src/screens/*"],
       "@interfaces": ["./src/interfaces/*"],
       "@theme": ["./src/theme/index.ts"],
+      "@context": ["./src/context/*"],
       "@mocks": ["./src/mocks/index.ts"]
     }
   }
