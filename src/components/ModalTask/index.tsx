@@ -2,9 +2,7 @@ import {
   Modal,
   ModalProps,
   TouchableWithoutFeedback,
-  View,
   StyleSheet,
-  Keyboard,
 } from "react-native";
 import DateTimePicker from "@react-native-community/datetimepicker";
 import Feather from "@expo/vector-icons/Feather";
@@ -93,12 +91,10 @@ export function ModalTask(props: ModalProps) {
                 onSelect={(selectedItem, index) => {
                   console.log(selectedItem, index);
                 }}
-                buttonTextAfterSelection={(selectedItem: ICategory) => {
-                  return selectedItem.name;
-                }}
-                rowTextForSelection={(item: ICategory) => {
-                  return item.name;
-                }}
+                buttonTextAfterSelection={(selectedItem: ICategory) =>
+                  selectedItem.name
+                }
+                rowTextForSelection={(item: ICategory) => item.name}
               />
             </Category>
             <Tags>
@@ -151,6 +147,8 @@ const styles = StyleSheet.create({
   buttonTextStyle: {
     textTransform: "capitalize",
     fontSize: 14,
+    paddingRight: 120,
+    marginLeft: -30,
   },
   dropDownStyle: {
     backgroundColor: "#fafafa",

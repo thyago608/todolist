@@ -28,6 +28,8 @@ export const Label = styled.Text`
   font-family: ${THEMES.FONT_FAMILY.SEMI_BOLD};
   font-size: ${THEMES.FONT_SIZE.SM};
   color: ${THEMES.COLORS.STONE_500};
+
+  margin-bottom: 10px;
 `;
 
 export const Input = styled.TextInput`
@@ -49,8 +51,6 @@ export const Tags = styled.View`
 `;
 
 export const TagsContent = styled.View`
-  margin-top: 15px;
-
   flex-direction: row;
   align-items: center;
 `;
@@ -74,8 +74,8 @@ export const TimeButton = styled.TouchableWithoutFeedback`
 `;
 
 export const TimeButtonContent = styled.View`
-  margin-top: 10px;
   padding: 12px;
+  width: 120px;
 
   border: 1px solid ${transparentize(0.8, "#737373")};
   border-radius: 8px;
